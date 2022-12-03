@@ -8,6 +8,7 @@ export default new Vuex.Store({
   state: {
     //接收學生資料
     students:null,
+    bgColor:['rgba(55,255,255,0.2)','rgba(255,55,255,0.2)','rgba(255,255,55,0.2)']
   },
   mutations: {
     fillClassData(state,data){

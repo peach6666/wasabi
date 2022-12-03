@@ -13,7 +13,12 @@ export default {
     meta:[
       {vmid:'description',name:'description',content:'這是班級首頁'}
     ]  
-  },
-  
+  }
 }
 </script>
+
+<style scoped lang="scss">
+.home{
+  margin-top: 15%;
+}
+</style>

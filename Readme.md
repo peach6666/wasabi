@@ -1,0 +1,24 @@
+#針對12點要求列點說明
+1.我使用vue-cli構建基於vue2的專案，有額外載入vue-router、vuex
+
+2.以scss撰寫簡單樣式，另外以scoped規範scss作用域
+
+3.撰寫HelloClass component，在About進行掛載
+
+4.在computed引入mapState、mapActions等vuex方法
+
+5.對於"同一component切換prop來改變對應的輸入類型"這句話不太清楚意思，我在HelloClass component由props取得About父組件的學生資料並進行渲染，建立text、radio、select等表單資料並以v-model讓資料同步，不太確定這樣有沒有符合要求
+
+6.以vue-router定義Home、About頁面路由，可以在2個頁面自由切換
+
+7.引入VueMeta套件，在main.js綁定head，並在Home和About定義metaInfo，自定義title和description
+
+8.不確定Global參數使用的意思，有想過用全域mixin或root等等來完成，但後來覺得以vuex狀態管理完成可能較簡單易懂，所以在vuex定義bgColor陣列作為背景顏色，在App.vue中以changeColor函式配合setInterval進行自動輪播，每5秒會切換一次背景色
+
+9.以訊息提供的mock api自定義4組學生資料，引入axios跳建以get方法將其call進vuex，原本有想要把crud都寫一寫，把text、radio、select的資料寫入api，但發現只有get沒有被cors擋，所以只寫了get
+
+10.在小的專案中使用vuex可能有點殺雞焉用牛刀，但考慮到沿用性跟擴充的可能，我還是引入vuex進行狀態管理，若在未來有機會擴充，我認為會較容易，另外沒有引入過多套件造成不必要的資源消耗，程式碼盡量簡潔易懂，也引入mapState、mapActions等等方法讓component引用vuex狀態時可以較為簡便
+
+11.引入firebase-tools並依程序部署
+
+12.在我個人的github中建立新的repo "wasabi"，並進行版本控制
